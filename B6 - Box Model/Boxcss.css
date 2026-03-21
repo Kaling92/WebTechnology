@@ -13,9 +13,7 @@
     border: none;
     background-color: rgb(215, 230, 230);
     text-align: center;
-    align-items: center;
-    display: flex;
-     flex-direction: column;
+    flex-direction: column;
 }
 
 .rate {
@@ -27,8 +25,6 @@
     color: rgb(17, 90, 119);
     border: solid rgb(64, 93, 156);
     border-radius: 200px;
-    align-self: center;
-    display: block;
     margin: 0 auto;
 }
 
@@ -46,10 +42,12 @@
     background-color: antiquewhite;
     padding: 10px;
     border-radius: 10px;
-    border: solid rgb(190, 190, 235);
+    border: solid rgb(41, 41, 42);
     width: fit-content;
+    margin-left: 20px;
 }
 .button:hover{
-    background-color: rgb(173, 223, 223);
+    background-color: rgb(167, 169, 142);
     color: white;
 }
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Boxcss.css">
+    <style>
+        .staticContent {
+            width: 200px;
+            height: 100px;
+            background-color: cornflowerblue;
+            position: static;
+        }
+
+        .relative-container {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            background-color: rgb(20, 83, 83);
+        }
+
+        .relative-element {
+            position: relative;
+            width: 200px;
+            height: 100px;
+            top: 20px;
+            left: 0px;
+            border: solid red;
+            background-color: whitesmoke;
+
+        }
+
+        .absolute-container {
+            position: absolute;
+            top: 100px;
+            left: 400px;
+            width: 400px;
+            height: 200px;
+            background-color: cornflowerblue;
+        }
+
+        .absolute-element {
+            position: absolute;
+            border: solid brown;
+            top: 20px;
+            left: 20px;
+            width: 200px;
+            height: 100px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="staticContent">Static content <br> Static position only</p>
+    <div class="relative-container"> Can adjust positon with top/left/right/bottom
+        <div class="relative-element"> Relative: <br>Can adjust position</div>
+        <div class="relative-element"></div>
+    </div>
+
+    <div class="absolute-container">
+        <div class="absolute-element"> Absolute: <br>Can adjust position but just within container</div>
+    </div>
+</body>
+
+</html>
