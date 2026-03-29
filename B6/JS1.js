@@ -130,17 +130,4 @@ console.log(`Model: ${this.model}`);
 };
 console.log(car1.printf())
 
-// Kéo - Búa - Bao
-// //Lần 1: //lặp
-// Người:
-// Máy: 
-// Kết quả: Người thắng/thua/hòa Máy //rẽ nhánh
-// Điểm: Người 1, máy 0 (thắng +1, thua +0.5)
-// Lần 2: //lặp
-// Người:
-// Máy: 
-// Kết quả: Người thắng/thua/hòa Máy
-// Điểm: Người 1, máy 0 (thắng +1, thua +0.5)
-// --
-// Kết thúc khi lệch nhau 5 Điểm.
-// In ra: Kết thúc: Người thắng chung cuộc. Lịch sử chơi. 
+
