@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>GIAI PHUONG TRINH BAC 1</h1>
+    <input id="a" type="text" placeholder="He so a">
+    <br>
+    <input id="b" type="text" placeholder="He so b">
+    <br>
+    <button id="button" value="Giai phuong trinh">Giai phuong trinh</button>
+    <p id="ketQua"></p>
+    <script>
+
+        let ketQua = document.getElementById("ketQua");
+        let button = document.getElementById("button")
+        button.addEventListener("click", function () {
+            let a = Number(document.getElementById("a").value)
+            let b = Number(document.getElementById("b").value)
+            if (a === 0) {
+                if (b === 0) {
+                    ketQua.innerText = "Phuong trinh vo so nghiem"
+                }
+                else {
+                    ketQua.innerText = "Phuong trinh vo nghiem"
+                }
+            }
+            else {
+                let x = -b / a;
+                ketQua.innerText = "Ket qua = " + x;
+            }
+
+        })
+
+    //LAM LAI VOI CAU TRUC OBJECT
+    </script>
+</body>
+
+</html>
