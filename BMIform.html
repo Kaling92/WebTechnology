@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            width: 50%;
+            display: grid;
+            grid-template-columns: 1fr;
+            float: left;
+            border-radius: 20px;
+        }
+        .grid-item{
+            text-align: left;
+        }
+        .formName {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            justify-items: center;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+    <div class="grid-item formName" >TÍNH CHỈ SỐ BMI</div>
+    
+    <div class="grid-item">Nhập cân nặng</div>
+    <div class="grid-item">
+        <input type="text" id="canNang">
+    </div>
+    <div class="grid-item">Nhập chiều cao?</div>
+    <div class="grid-item">
+        <input type="text" id="chieuCao">
+    </div>
+
+    <div class="grid-item">Chọn loại tuổi</div>
+    <div class="grid-item">
+        <select id="tuoi">
+            <option>Già, lớn tuổi</option>
+            <option>Trung niên</option>
+            <option>Thanh niên</option>
+        </select>
+    </div>
+    </div>
+</body>
+</html>
