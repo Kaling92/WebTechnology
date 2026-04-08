@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(to right, #aad6e7, #eca9ae);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .frame {
+            width: 50%;
+            background: linear-gradient(to right, pink, rgb(170, 210, 233));
+            border-radius: 20px;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            display: flex;
+            margin: auto;
+        }
+
+        .grid-container {
+            width: 80%;
+            display: grid;
+            float: left;
+            grid-template-columns: 1fr;
+            background-color: rgb(97, 176, 221) pink;
+        }
+
+        .grid-item {
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+
+        .form-name {
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            text-align: center;
+
+        }
+
+        button {
+            background: white;
+            height: 50px;
+        }
+        button:hover{
+            background-color: aquamarine;
+        }
+        #signUp {
+            background: lightgreen;
+            color: black;
+            width: 100px;
+            height: 50px;
+            border: none;
+            font-weight: bold;
+        }
+        #signUp:hover{
+            background: lightseagreen;
+        }
+        button,
+        input {
+            grid-column: 2;
+            width: 500px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="frame">
+        <div class="grid-container">
+        <p class="form-name">Log In</p>
+        <p style="text-align: center;">Login here using your user name and password</p>
+        <div class="grid-item">
+            <input id="userName" type="text" placeholder="UserName">
+        </div>
+        <div class="grid-item">
+            <input class="grid-item" id="passWord" type="password" placeholder="Password">
+        </div>
+        <div class="grid-item"><button id="button">Log in</button></div>
+
+        <div class="grid-item">
+            <p id="forgot" style="grid-column: 1; margin-right: 50px;">Forgot Password</p>
+            <button id="signUp" style="grid-column: 1;">Sign Up</button>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        let btn = document.getElementById("button")
+        btn.addEventListener("click",()=>
+        {
+            let userName = document.getElementById("userName").value
+            let passWord = document.getElementById("passWord").value
+
+            let data = {
+                userName:userName,
+                passWord:passWord,
+            }
+            let strJSON = JSON.stringify(data);
+            console.log(strJSON)
+            confirm(strJSON)
+
+        })
+    </script>
+</body>
+
+</html>

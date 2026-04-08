@@ -68,9 +68,19 @@
             <p class="user-name">@ Tony Phùng
             </p>
             <p class="time">10:45 Thứ 2 ngày 06/09/2021</p>
-            <p class="comment">Rất hài lòng ( giao hàng nhanh hàng đúng như trên hình , cắt thử rất Ok Thank’s Shop.</p>
+            <p class="comment">Rất hài lòng ( giao hàng nhanh hàng đúng như trên hình), cắt thử rất Ok Thank’s Shop.</p>
         </div>
     </div>
+    <script>
+        let today = new Date();
+        let formatDate = String(today.getTime)+ ''
+                       
+                        String(today.getDate()).padStart(2,'0')+'/'+
+                        String(today.getMonth()+1).padStart(2,'0')+'/'+
+                        String(today.getFullYear)
+
+        document.getElementsByClassName(time).textContent = formatDate;
+    </script>
 </body>
 
 </html>
