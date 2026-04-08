@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+    <script>
+        let item = document.querySelector(".item");
+        console.log(item.textContent);
+        let items = document.querySelectorAll(".item");
+        for (let i of items) {
+            console.log(i.textContent);
+        }
+    </script>
+
+</html>

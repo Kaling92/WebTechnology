@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kéo Búa Bao</title>
+</head>
+<body>
+  <p>Người</p>
+  <input type="text" id="nguoi" placeholder="Nhập Keo/Bua/Bao">
+  <br>
+  <p>Máy</p>
+  <p id="may"></p>
+  <button id="choi">Chơi</button>
+  <p id="ketQua"></p>
+  <p id="lichSu"></p>
+
+  <script>
+    let diemNguoi = 0;
+    let diemMay = 0;
+    let luot = 1;
+    let option = ["Keo", "Bua", "Bao"];
+    let lichSu = [];
+
+    document.getElementById("choi").addEventListener("click", function () {
+      let Nguoi = document.getElementById("nguoi").value;
+      let May = option[Math.floor(Math.random() * 3)];
+      document.getElementById("may").innerText = May;
+
+      let ketQuaText = "";
+
+      if (
+        (Nguoi === "Keo" && May === "Bao") ||
+        (Nguoi === "Bua" && May === "Keo") ||
+        (Nguoi === "Bao" && May === "Bua")
+      ) {
+        diemNguoi++;
+        ketQuaText = `Người thắng Máy!`;
+      } else if (
+        (May === "Keo" && Nguoi === "Bao") ||
+        (May === "Bua" && Nguoi === "Keo") ||
+        (May === "Bao" && Nguoi === "Bua")
+      ) {
+        diemMay++;
+        ketQuaText = `Người thua Máy!!`;
+      } else {
+        diemNguoi += 0.5;
+        diemMay += 0.5;
+        ketQuaText = `Hòa!`;
+      }
+
+      let ketQuaLuot = `Lượt ${luot}: ${ketQuaText} | Tỷ số Người: ${diemNguoi} - Máy: ${diemMay}`;
+      lichSu.push(ketQuaLuot);
+      document.getElementById("ketQua").innerText = ketQuaLuot;
+      luot++;
+
+      if (Math.abs(diemNguoi - diemMay) > 1) {
+        alert("Trò chơi kết thúc!\n" + "Lịch sử chơi:\n" + lichSu.join("\n"));
+      }
+    });
+  </script>
+</body>
+</html>
