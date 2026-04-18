@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Layout.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -14,7 +15,14 @@
             <img src="totoro.png" alt="">
         </div>
         <div class="menu">
-            <div class="menuItem">GIỚI THIỆU</div>
+            <div id="menuItemGT" class="menuItem">GIỚI THIỆU
+                <div class="subGT">
+                    <div>Cổng thông tin</div>
+                    <div>Ngành đào tạo</div>
+                    <div>Lịch khai giảng</div>
+                </div>
+
+            </div>
             <div class="menuItem">ĐÀO TẠO ĐẠI HỌC</div>
             <div class="menuItem">ĐÀO TẠO SAU ĐẠI HỌC</div>
             <div class="menuItem">NGHIÊN CỨU KHOA HỌC</div>
@@ -75,6 +83,15 @@
         </div>
         <div class="footer">Đây là footer</div>
     </div>
+
+    <script>
+        $(document).on("mouseenter", "#menuItemGT", function () {
+            $(this).find(".subGT").slideDown()
+        })
+        $(document).on("mouseleave", "#menuItemGT", function () {
+            $(this).find(".subGT").slideUp()
+        })
+    </script>
 </body>
 
 </html>

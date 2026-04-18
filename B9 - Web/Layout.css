@@ -24,6 +24,17 @@ body{
 .menuItem {
     border-right: solid 1px black;
     padding: 10px;
+    position: relative;
+}
+.subGT{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    display: none;
+    background: rgb(93, 137, 233);
+    border: solid 1px grey;
+    height: auto;
+    padding: 10px;
 }
 .logOut{
     margin-left: auto;
