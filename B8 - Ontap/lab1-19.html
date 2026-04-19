@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box{
+            border-radius: 10px;
+            box-shadow: 0 0 10px;
+            background: linear-gradient(to right rgb(212, 138, 212) white);
+            padding: 10px;
+    
+        }
+        .formName{
+            color: blue;
+            font-size: 26px;
+            text-align: center;
+        }
+        input{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p class="formName">VIN Digibank</p>
+        <p>E-mail</p>
+        <input id="email" type="email" placeholder="email@gmail.com">
+        <p>Password</p>
+        <input id="pwd" type="password">
+        <button style="display: block; margin: 20px auto; background: aquamarine;" id="button">Log in</button>
+    </div> 
+</body>
+</html>

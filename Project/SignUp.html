@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="SignUp.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="left">
+      <div class="formHeader">Snake Energy</div>
+      <p>Bao ve vi cua ban</p>
+      <div class="seedSecurity">
+        <h2>Seed Phrase Security</h2>
+        <p>
+          Your recovery phrase is the master key to your assets. Never share it
+          with anyone else. Snake energy will never ass for your recovery phrase
+          in any support interaction.
+        </p>
+      </div>
+    </div>
+    <div class="right">
+      <div class="container">
+        <div class="signUp">
+          <div class="signUpField">FULL NAME</div>
+          <input id="fullName" type="text" placeholder="Satoshi Nakamoto" />
+        </div>
+        <div class="signUp">
+          <div class="signUpField">ETHER EMAIL</div>
+          <input id="email" type="email" placeholder="snake@gmail.com" />
+        </div>
+        <div class="signUp">
+          <div class="signUpField">VAULT KEY</div>
+          <input id="vaulKey" type="password" />
+        </div>
+        <div class="signUp">
+          <div class="signUpField">CONFIRM KEY</div>
+          <input id="confirmKey" type="password" />
+        </div>
+        <div class="acknowledge">
+          <input id="acknowledge" type="checkbox" />I acknowledge that I have
+          read the <a id="policy">Policy Terms</a> and understand that my
+          private keys are my sole responsibility.
+        </div>
+        <button id="createWallet">
+          Create Wallet
+          <i class="fa-solid fa-bolt"></i>
+        </button>
+        <div class="login">
+          <p>Already synchornized?</p>
+          <a id="login">Login to Vault</a>
+        </div>
+      </div>
+      <p class="subDes">SECURING THE FUTURE OF DECENTRALIZED ENERGY</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .frame {
+        width: 360px;
+        background: white;
+        border-radius: 20px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #5b7a74, #0072ff);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .grid-container {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        float: left;
+      }
+      .grid-item {
+        text-align: left;
+        margin: 5px;
+        padding: 5px;
+      }
+      .formName {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        font-weight: bold;
+        justify-items: center;
+        color: blue;
+      }
+
+      button {
+        width: 100px;
+        height: 50px;
+        color: white;
+        font-weight: bold;
+        background: lightskyblue;
+        border: none;
+        border-radius: 5px;
+        display: block;
+        margin: auto;
+      }
+      button:hover {
+        background: #0072ff;
+      }
+      input,
+      select {
+        width: 100%;
+        height: 20px;
+      }
+      #ketQua {
+        font-size: 18px;
+        font-weight: bold;
+        color: #0072ff;
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      #khuyenCao {
+        font-size: 14px;
+        color: #444;
+        text-align: center;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="grid-container">
+        <div
+          style="
+            width: 100%;
+            background: blue;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+          "
+          class="grid-item formName"
+        >
+          TÍNH CHỈ SỐ BMI
+        </div>
+
+        <div class="grid-item">Nhập cân nặng?</div>
+        <div class="grid-item">
+          <input type="text" id="canNang" />
+        </div>
+        <div class="grid-item">Nhập chiều cao?</div>
+        <div class="grid-item">
+          <input type="text" id="chieuCao" />
+        </div>
+
+        <div class="grid-item">Chọn loại tuổi</div>
+        <div class="grid-item">
+          <select id="tuoi">
+            <option>Già, lớn tuổi</option>
+            <option>Trung niên</option>
+            <option>Thanh niên</option>
+          </select>
+        </div>
+
+        <div class="grid-item">
+          <button id="button">Tính BMI</button>
+        </div>
+        <div class="grid-item" id="ketQua"></div>
+      </div>
+    </div>
+
+    <script>
+      let button = document.getElementById("button");
+      button.addEventListener("click", function () {
+        let canNang = document.getElementById("canNang").value;
+        let chieuCao = document.getElementById("chieuCao").value;
+        chieuCao = chieuCao / 100;
+        let tuoi = document.getElementById("tuoi").value;
+        let ketQua = document.getElementById("ketQua");
+        let bmiData = {
+          canNang: canNang,
+          chieuCao: chieuCao,
+          tuoi: tuoi,
+        };
+
+        let strJSON = JSON.stringify(bmiData);
+        console.log(strJSON);
+        let bmi = canNang / (chieuCao * chieuCao);
+        let khuyenCao = "";
+        let khuyenNghi = "";
+
+        if (bmi < 18) {
+          khuyenCao = "Dưới chuẩn";
+        } else if (bmi >= 18.5 && bmi <= 24.9) {
+          khuyenCao = "Bình thường";
+        } else if (bmi >= 25 && bmi <= 29.9) {
+          khuyenCao = "Thừa cân";
+        } else if (bmi >= 30 && bmi <= 34.9) {
+          khuyenCao = "Béo phì cấp độ I";
+          if (tuoi === "Trung niên") {
+            khuyenNghi = "Khám định kỳ";
+          }
+        } else if (bmi >= 35 && bmi <= 39.9) {
+          khuyenCao = "Béo phì cấp độ II";
+          if (tuoi === "Trung niên" || tuoi === "Già, lớn tuổi") {
+            khuyenNghi = "Tập thể dục thường xuyên";
+          }
+        } else {
+          khuyenCao = "Béo phì cấp độ III";
+          if (tuoi === "Già, lớn tuổi") {
+            khuyenNghi = "Hạn chế mỡ động vật";
+          }
+        }
+
+        ketQua.innerText = `KẾT QUẢ
+${bmi.toFixed(2)}
+${khuyenCao}
+${khuyenNghi}`;
+      });
+    </script>
+  </body>
+</html>

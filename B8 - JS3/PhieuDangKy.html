@@ -1,148 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        .grid-container {
-            width: 80%;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            /* Chia thành hai cột bằng tỷ lệ 1:1 */
-            /* gap: 10px; */
-            /* Khoảng cách giữa các phần tử */
-            background-color: rgb(218, 217, 217);
-            float: left;
-            /* margin-bottom: 10px; */
-            margin-left: 100px;
-            margin-right: 100px;
-            background: lightblue;
-        }
+      .grid-container {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: rgb(218, 217, 217);
+        float: left;
+        margin-left: 100px;
+        margin-right: 100px;
+        background: lightblue;
+      }
 
-        .formName {
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
-            font-size: 20px;
-            font-weight: bold;
-            text-align: center;
-            justify-items: center;
-            color: blue;
-        }
+      .formName {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        justify-items: center;
+        color: blue;
+      }
 
-        .grid-item {
-            padding: 10px;
-            text-align: left;
-            border: solid 1px lightseagreen;
-        }
+      .grid-item {
+        padding: 10px;
+        text-align: left;
+        border: solid 1px lightseagreen;
+      }
 
-        #ketQua {
-            color: red;
-            font-weight: bold;
-            font-size: 18px;
+      #ketQua {
+        color: red;
+        font-weight: bold;
+        font-size: 18px;
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-        .full {
-            grid-column: span 2;
-            /* take full row */
-        }
+      .full {
+        grid-column: span 2;
+      }
 
-        .center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-      
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <p class="formName">Phiếu đăng ký tham gia chương trình khuyến mãi</p>
     <div class="grid-container">
-        <div class="grid-item">Họ và tên
-        </div>
-        <div class="grid-item">
-            <input id="hoTen" type="text">
-        </div>
-        <div class="grid-item">
-            Địa chỉ
-        </div>
-        <div class="grid-item">
-            <textarea name="" id="diaChi" cols="30" rows="10"></textarea>
-        </div>
-        <div class="grid-item">Điện thoại</div>
-        <div class="grid-item">
-            <input type="text" id="dienThoai">
-        </div>
-        <div class="grid-item">Giới tính</div>
-        <div class="grid-item" id="gioiTinh">
-            <input type="radio" id="nam" value="Nam">Nam
-            <input type="radio" id="nu" value="Nữ"> Nữ
-        </div>
+      <div class="grid-item">Họ và tên</div>
+      <div class="grid-item">
+        <input id="hoTen" type="text" />
+      </div>
+      <div class="grid-item">Địa chỉ</div>
+      <div class="grid-item">
+        <textarea name="" id="diaChi" cols="30" rows="10"></textarea>
+      </div>
+      <div class="grid-item">Điện thoại</div>
+      <div class="grid-item">
+        <input type="text" id="dienThoai" />
+      </div>
+      <div class="grid-item">Giới tính</div>
+      <div class="grid-item" id="gioiTinh">
+        <input type="radio" id="nam" value="Nam" />Nam
+        <input type="radio" id="nu" value="Nữ" /> Nữ
+      </div>
 
-        <div class="grid-item">Nghề nghiệp</div>
-        <div class="grid-item">
-            <select id="ngheNghiep">
-                <option>Giáo viên</option>
-                <option> Bác sĩ</option>
-            </select>
-        </div>
+      <div class="grid-item">Nghề nghiệp</div>
+      <div class="grid-item">
+        <select id="ngheNghiep">
+          <option>Giáo viên</option>
+          <option>Bác sĩ</option>
+          <option>Nhân viên văn phòng</option>
+          <option>Sinh viên</option>
+        </select>
+      </div>
 
-        <div class="grid-item">Chọn sản phẩm tham gia</div>
-        <div class="grid-item" id="sanPham">
-            <select size=4>
-                <option>Kem đánh răng</option>
-                <option>Bột giặt</option>
-                <option> Dầu gội</option>
-                <option>Sữa tắm</option>
-            </select>
-        </div>
+      <div class="grid-item">Chọn sản phẩm tham gia</div>
+      <div class="grid-item" id="sanPham">
+        <select size="4">
+          <option>Kem đánh răng</option>
+          <option>Bột giặt</option>
+          <option>Dầu gội</option>
+          <option>Sữa tắm</option>
+        </select>
+      </div>
 
-        <div class="grid-item">Số người dự đoán tham gia</div>
-        <div class="grid-item">
-            <input id="duDoan" type="text">
-        </div>
-        <div class="grid-item full center">
-            <button id="dongY" value="Đồng ý" style="align-self: center;"> Đồng ý</button>
-        </div>
-        <div class="grid-item full center" id="ketQua"></div>
+      <div class="grid-item">Số người dự đoán tham gia</div>
+      <div class="grid-item">
+        <input id="duDoan" type="text" />
+      </div>
+      <div class="grid-item full center">
+        <button id="dongY" value="Đồng ý" style="align-self: center">
+          Đồng ý
+        </button>
+      </div>
+      <div class="grid-item full center" id="ketQua"></div>
     </div>
 
-
     <script>
-        let btn = document.getElementById("dongY")
-        btn.addEventListener("click", () => {
-            let hoTen = document.getElementById("hoTen").value
-            let diaChi = document.getElementById("diaChi").value
-            let dienThoai = document.getElementById("dienThoai").value
-            let gioiTinhNam = document.getElementById("nam").checked
-            let gioiTinhNu = document.getElementById("nu").checked
-            let ngheNghiep = document.getElementById("ngheNghiep").value
-            let sanPham = document.getElementById("sanPham").value
-            let duDoan = document.getElementById("duDoan").value
-            let ketQua = document.getElementById("ketQua")
-            let data = {
-                hoTen: hoTen,
-                diaChi: diaChi,
-                dienThoai: dienThoai,
-                gioiTinh: gioiTinh,
-                ngheNghiep: ngheNghiep,
-                sanPham: sanPham,
-                duDoan: duDoan,
-            }
-            let strJSON = JSON.stringify(data);
-            console.log(strJSON);
-            confirm(data)
-            ketQua.innerHTML = "Bạn đã đăng ký thành công!!!";
+      let btn = document.getElementById("dongY");
+      btn.addEventListener("click", () => {
+        let hoTen = document.getElementById("hoTen").value;
+        let diaChi = document.getElementById("diaChi").value;
+        let dienThoai = document.getElementById("dienThoai").value;
+        let gioiTinh = "";
+        if (document.getElementById("nam").checked) {
+          gioiTinh = "Nam";
+        } else {
+          gioiTinh = " Nữ";
+        }
 
-        })
+        let ngheNghiep = document.getElementById("ngheNghiep").value;
+        let sanPham = document.getElementById("sanPham").value;
+        let duDoan = document.getElementById("duDoan").value;
+        let ketQua = document.getElementById("ketQua");
+        let data = {
+          hoTen: hoTen,
+          diaChi: diaChi,
+          dienThoai: dienThoai,
+          gioiTinh: gioiTinh,
+          ngheNghiep: ngheNghiep,
+          sanPham: sanPham,
+          duDoan: duDoan,
+        };
+        let strJSON = JSON.stringify(data);
+        console.log(strJSON);
+        confirm(`Thông tin đăng ký đã được tiếp nhận
+                ${strJSON}`);
+        ketQua.innerHTML = "Bạn đã đăng ký thành công!!!";
+      });
     </script>
-</body>
-
+  </body>
 </html>

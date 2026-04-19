@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            float: left;
+
+        }
+
+        .grid-item{
+            text-align: left;
+            padding: 10px;
+            font-weight: lighter;
+            color: grey;
+        }
+
+        .from-name{
+            color: rgb(17, 17, 210);
+            border-bottom: solid red;
+            font-size: 30px;
+        }
+        input, textarea{
+            width: 90%;
+            height: 30px;
+        }
+        button{
+            width: fit-content;
+            height: 50px;
+            background: lightseagreen;
+            color: white ;
+            border: none;
+        }
+        button:hover{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="from-name">LIÊN HỆ</div>
+    <div class="grid-container">
+        <div class="grid-item">Thông tin</div>
+        <div class="grid-item" style="color: blue;">Hãy liên hệ với chúng tôi bất cứ khi nào!!!</div>
+    <div class="grid-item">Kp 6, p.Linh tTrung, Tp. Thủ Đức, Tp HCM</div>
+    <div class="grid-item">
+        <input id="hoTen" type="text" placeholder="Họ và tên">
+    </div>
+    <div class="grid-item">info@uit.edu.vn</div>
+    <div class="grid-item">
+        <input id="email" type="text" placeholder="Địa chỉ email">
+
+    </div>
+    <div class="grid-item">+84 12345678</div>
+    <div class="grid-item">
+        <input id="tieuDe" placeholder="Tiêu đề bài viết" type="text">
+    </div>
+    <div class="grid-item" style="grid-column: 2;">
+        <textarea id="noiDung" placeholder="Nội dung cần gửi" style="height: 100px;"></textarea>
+    </div>
+    <div class="grid-item" style="grid-column: 2;">
+        <button id="btn">GỬI TIN NHẮN</button>
+    </div>
+    
+    </div>
+
+    <script>
+        let btn = document.getElementById("btn")
+        btn.addEventListener("click",()=>{
+            let hoTen = document.getElementById("hoTen").value
+            let email = document.getElementById("email").value
+            let tieuDe = document.getElementById("tieuDe").value
+            let noiDung = document.getElementById("noiDung").value
+
+            let data = {
+                hoTen: hoTen,
+                email: email,
+                tieuDe: tieuDe,
+                noiDung: noiDung
+            }
+
+            let strJSON = JSON.stringify(data)
+            console.log(strJSON)
+            alert("Tin nhẵn đã gửi") 
+        })
+    </script>
+</body>
+</html>

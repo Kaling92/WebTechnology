@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="Homepage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="left">
+      <div class="title">Snake Energy</div>
+      <div class="profile">
+        <p id="userProfile">
+          <i class="fa-solid fa-address-book"></i>
+          <label>User Profile</label>
+        </p>
+        <p id="phoneNumber">0913108937</p>
+      </div>
+      <div class="menu">
+        <div class="menuItem">Dashboard</div>
+        <div class="menuItem">Assets</div>
+        <div class="menuItem">Swap</div>
+        <div class="menuItem">Analytics</div>
+        <div class="menuItem">NFTs</div>
+        <div class="menuItem">Transactions</div>
+        <div class="menuItem">Security</div>
+        <div class="menuItem">Settings</div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="rightHeader">
+        <div class="rightHeaderLeft">
+          <input
+            id="searchBar"
+            type="text"
+            placeholder="Search Assets, NFTs..."
+          />
+        </div>
+        <div class="rightHeaderRight">
+          <div class="headerRightButton">
+            <button id="receive">Receive</button>
+            <button id="send">Send</button>
+          </div>
+          <div class="bell">
+            <i class="fa-solid fa-bell"></i>
+          </div>
+          <div class="wallet">
+            <i class="fa-solid fa-wallet"></i>
+          </div>
+        </div>
+      </div>
+      <div class="totalBalanceBox">
+        <p>TOTAL PORTFOLIO BALANCE</p>
+        <div id="totalBalance">$422,194</div>
+        <div class="calculate">
+          <div class="calculateEarn">
+            <div class="profit">
+              <p>PROFIT (24H)</p>
+              <p id="profit">- $14,204</p>
+            </div>
+            <div class="growth">
+              <p>WEEKLY GROWTH</p>
+              <p id="growth">+ $31,890</p>
+            </div>
+          </div>
+          <div class="totalBalanceButton">
+            <button>Swap</button>
+            <button>Stake</button>
+            <button>Quick Send</button>
+          </div>
+        </div>
+      </div>
+      <div class="righMarket">
+      <div class="rightPrice">
+        <div class="rightPriceTopHolding">
+          <p>Top Holdings</p>
+          <a id="allAssests">View All Assets</a>
+        </div>
+          <div class="assets">
+            <div class="assetsBox">
+              <div class="assetsName">
+                <h1>Ethereum</h1>
+                <p>ETH</p>
+              </div>
+              <div class="currentPrice">
+                <h1>12.42 ETH</h1>
+                <p>$33,124.90</p>
+              </div>
+              <div class="trending">
+                <h1>+2.4%</h1>
+                <p>24H</p>
+              </div>
+            </div>
+            <div class="assetsBox">
+              <div class="assetsName">
+                <h1>Snake Energy</h1>
+                <p>SNK</p>
+              </div>
+              <div class="currentPrice">
+                <h1>1,400,000 SNK</h1>
+                <p>$374,221.95</p>
+              </div>
+              <div class="trending">
+                <h1>+18.2%</h1>
+                <p>24H</p>
+              </div>
+            </div>
+            <div class="assetsBox">
+              <div class="assetsName">
+                <h1>Bitcoin</h1>
+                <p>BTC</p>
+              </div>
+              <div class="currentPrice">
+                <h1>2.14 BTC</h1>
+                <p>$14,848.00</p>
+              </div>
+              <div class="trending">
+                <h1>-1.2%</h1>
+                <p>24H</p>
+              </div>
+            </div>
+            <div class="assetsBox">
+              <div class="assetsName">
+                <h1>Bitcoin</h1>
+                <p>BTC</p>
+              </div>
+              <div class="currentPrice">
+                <h1>2.14 BTC</h1>
+                <p>$14,848.00</p>
+              </div>
+              <div class="trending">
+                <h1>-1.2%</h1>
+                <p>24H</p>
+              </div>
+            </div>
+            <div class="assetsBox">
+              <div class="assetsName">
+                <h1>Bitcoin</h1>
+                <p>BTC</p>
+              </div>
+              <div class="currentPrice">
+                <h1>2.14 BTC</h1>
+                <p>$14,848.00</p>
+              </div>
+              <div class="trending">
+                <h1>-1.2%</h1>
+                <p>24H</p>
+              </div>
+            </div>
+            <div class="assetsBox">
+              <div class="assetsName">
+                <h1>Bitcoin</h1>
+                <p>BTC</p>
+              </div>
+              <div class="currentPrice">
+                <h1>2.14 BTC</h1>
+                <p>$14,848.00</p>
+              </div>
+              <div class="trending">
+                <h1>-1.2%</h1>
+                <p>24H</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="rightPriceActivity">
+          <div class="rightPriceActivityTitle">
+            <p>Activity</p>
+          <i class="fa-solid fa-filter"></i>
+          </div>
+          <div class="activity">
+            <div class="activityBox">
+              <div class="acitivityName">
+                <h1>Received Ethereum</h1>
+                <p>From: 0x82...1A9E</p>
+                <p class="completed">COMPLETED</p>
+              </div>
+              <div class="activityAmount">
+                <p>4.65 ETH</p>
+              </div>
+            </div>
+            <div class="activityBox">
+              <div class="acitivityName">
+                <h1>Swapped SNK for USDC</h1>
+                <p>From: 0x91...7B2C</p>
+                <p class="completed">COMPLETED</p>
+              </div>
+              <div class="activityAmount">
+                <p>2000 SNK</p>
+              </div>
+            </div>
+            <div class="activityBox">
+              <div class="acitivityName">
+                <h1>Staked Bitcoin</h1>
+                <p>From: 0x73...9D4F</p>
+                <p class="pending">PENDING</p>
+              </div>
+              <div class="activityAmount">
+                <p>1.2 BTC</p>
+              </div>
+            </div>
+            <div class="activityBox">
+              <div class="acitivityName">
+                <h1>Received Ethereum</h1>
+                <p>From: 0x82...1A9E</p>
+                <p class="completed">COMPLETED</p>
+              </div>
+              <div class="activityAmount">
+                <p>4.65 ETH</p>
+              </div>
+            </div>
+            <div class="activityBox">
+              <div class="acitivityName">
+                <h1>Received Ethereum</h1>
+                <p>From: 0x82...1A9E</p>
+                <p class="completed">COMPLETED</p>
+              </div>
+              <div class="activityAmount">
+                <p>4.65 ETH</p>
+              </div>
+            </div>
+            <button id="viewHistory">VIEW HISTORY</button>
+          </div>
+        </div>
+        <div class="rightInfoCards">
+  <div class="infoCard" id="priceActionCard">
+    <i class="fa-solid fa-arrow-trend-up"></i>
+    <h2>Price Action</h2>
+    <p>ETH/SNAKE is up 12% in the last 24 hours.</p>
+  </div>
+  <div class="infoCard" id="liquidityCard">
+    <i class="fa-solid fa-droplet"></i>
+    <h2>Liquidity Score</h2>
+    <p>Excellent liquidity. Transaction impact: < 0.01%.</p>
+  </div>
+  <div class="infoCard" id="verifiedPoolCard">
+    <i class="fa-solid fa-shield"></i>
+    <h2>Verified Pool</h2>
+    <p>Audit complete by Snake Shield Labs (v2.4).</p>
+    <button class="auditBtn" id="auditBtn">VIEW AUDIT REPORT</button>
+  </div>
+</div>
+
+      </div>
+      </div>
+    </div>
+  </body>
+</html>

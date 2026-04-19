@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+        background: linear-gradient(to left, pink, rgb(192, 223, 237));
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: linear-gradient(to bottom, rgb(159, 224, 250), pink);
+        gap: 10px;
+        padding: 10px;
+      }
+      .grid-item {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <p>ĐÓNG GÓP Ý KIẾN VỀ SẢN PHÂM</p>
+    <p>
+      Góp ý của bạn sẽ được chúng tôi xem xét, vui lòng nhập tiếng Việt có dấu.
+    </p>
+    <div class="grid-container">
+      <input id="ten" type="text" placeholder="Họ và tên" />
+      <input id="the" type="text" placeholder="Mã thẻ" />
+      <input id="sdt" type="text" placeholder="Số điện thoại" />
+      <input id="email" type="email" placeholder="Email" />
+      <select id="loai">
+        <option>VIP</option>
+        <option>Thường</option>
+      </select>
+      <input id="hoaDon" type="text" placeholder="Mã hóa đơn" />
+      <textarea
+        id="moTa"
+        style="grid-column: span 2"
+        placeholder="Nhập chi tiết mô tả"
+      ></textarea>
+      <button id="button">GỬI GÓP Ý</button>
+      <a href="https://www.uit.edu.vn/" target="_self">Click</a>
+    </div>
+
+    <script>
+      document.getElementById("button").addEventListener("click", () => {
+        let ten = document.getElementById("ten").value;
+        let the = document.getElementById("the").value;
+        let sdt = document.getElementById("sdt").value;
+        let email = document.getElementById("email").value;
+        let loai = document.getElementById("loai").value;
+        let hoaDon = document.getElementById("hoaDon").value;
+        let moTa = document.getElementById("moTa").value;
+
+        let data = {
+          ten: ten,
+          the: the,
+          sdt: sdt,
+          email: email,
+          loai: loai,
+          hoaDon: hoaDon,
+          moTa: moTa,
+        };
+
+        let str = JSON.stringify(data);
+        console.log(data);
+        confirm("Đã lấy thông tin"+str)
+        window.open("https://uit.edu.vn",'_blank')
+      });
+    </script>
+  </body>
+</html>
