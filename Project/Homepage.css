@@ -6,7 +6,7 @@ body {
   display: flex;
   min-height: 100vh;
   gap: 10px;
-  font-size: 14px; /* base font size scaled down */
+  font-size: 14px;
 }
 
 i:hover {
@@ -398,13 +398,13 @@ i:hover {
 }
 #priceActionCard i {
   color: #4da6ff;
-}/
+}
 #liquidityCard i {
   color: #eb2c8b;
-} 
+}
 #verifiedPoolCard i {
   color: #ff4d4d;
-} 
+}
 
 .infoCard h2 {
   font-size: 1rem;

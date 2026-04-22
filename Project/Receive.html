@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receive</title>
+    <link rel="stylesheet" href="Homepage.css" />
+    <link rel="stylesheet" href="Receive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="left">
+      <div class="title">Snake Energy</div>
+      <div class="profile">
+        <p id="userProfile">
+          <i class="fa-solid fa-address-book"></i>
+          <label>User Profile</label>
+        </p>
+        <p id="phoneNumber">0913108937</p>
+      </div>
+      <div class="menu">
+        <div class="menuItem">Dashboard</div>
+        <div class="menuItem">Assets</div>
+        <div class="menuItem">Swap</div>
+        <div class="menuItem">Analytics</div>
+        <div class="menuItem">NFTs</div>
+        <div class="menuItem">Transactions</div>
+        <div class="menuItem">Security</div>
+        <div class="menuItem">Settings</div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="rightHeader">
+        <div class="rightHeaderLeft">
+          <input
+            id="searchBar"
+            type="text"
+            placeholder="Search Assets, NFTs..."
+          />
+        </div>
+        <div class="rightHeaderRight">
+          <div class="headerRightButton">
+            <button id="receive">Receive</button>
+            <button id="send">Send</button>
+          </div>
+          <div class="bell">
+            <i class="fa-solid fa-bell"></i>
+          </div>
+          <div class="wallet">
+            <i class="fa-solid fa-wallet"></i>
+          </div>
+        </div>
+      </div>
+      <div class="transactionHubTitle">
+        <p>TRANSACTION HUB</p>
+        <h1>Receive Assets</h1>
+      </div>
+      <div class="transactionHub">
+        <div class="receive">
+          <h1 id="qrCode"></h1>
+          <p>YOUR SNAKE WALLET ADDRESS</p>
+          <p id="address">0x4cbe58c50480...a3f5d1b</p>
+          <div class="receiveButton">
+            <button id="copyAddress">
+              <i class="fa-solid fa-copy"></i>
+              <label>Copy Address</label>
+            </button>
+            <button id="shareLink">
+              <i class="fa-solid fa-share"></i>
+              <label>Share Link</label>
+            </button>
+          </div>
+        </div>
+
+        <div class="rightNetwork">
+          <div class="rightNetworkTitle">
+            <i class="fa-solid fa-network-wired"></i>
+            <p>Select Network</p>
+          </div>
+          <div class="netWorkBox">
+            <img src="" />
+            <p id="networkName" class="netWorkName">Ethereum Mainnet</p>
+            <p id="reccommend" class="reccommend">RECOMMENDED</p>
+            <p id="connectedCheck" class="connectedCheck"></p>
+          </div>
+          <div class="netWorkBox">
+            <img src="" />
+            <p id="networkName" class="netWorkName">Tron</p>
+            <p id="reccommend" class="reccommend">LOW FEE</p>
+            <p id="connectedCheck" class="connectedCheck"></p>
+          </div>
+          <div class="netWorkBox">
+            <img src="" />
+            <p id="networkName" class="netWorkName">META MASK</p>
+            <p id="reccommend" class="reccommend">LAYER 2</p>
+            <p id="connectedCheck" class="connectedCheck"></p>
+          </div>
+          <div class="safetyProtocol">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <p class="safetyProtocolTitle">SAFETY PROTOCOL</p>
+            <p class="safetyProtocolContent">
+              Only send ETH and ERC-20 to this address.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mainNet">
+        <div class="mainNetTitle">
+          <p>Supported Tokens on Mainnet</p>
+          <button id="autoVerify">AUTO VEIRFY ENABLED</button>
+        </div>
+        <div class="mainNetSection">
+          <div class="tokenBox">
+            <div class="tokenBoxContent">
+              <i class="fa-brands fa-bitcoin"></i>
+              <p class="tokenName">WBTC</p>
+              <p class="tokenFullName">Wrapped Bitcoin</p>
+            </div>
+            <p class="tokenTrending">+1.2%</p>
+          </div>
+          <div class="tokenBox">
+            <div class="tokenBoxContent">
+              <i class="fa-solid fa-dollar-sign"></i>
+              <p class="tokenName">USDT</p>
+              <p class="tokenFullName">Tether USD</p>
+            </div>
+            <p class="tokenTrending">-0.01%</p>
+          </div>
+          <div class="tokenBox">
+            <div class="tokenBoxContent">
+              <i class="fa-solid fa-staff-snake"></i>
+              <p class="tokenName">SNK</p>
+              <p class="tokenFullName">Snake Energy</p>
+            </div>
+            <p class="tokenTrending">-0.01%</p>
+          </div>
+          <div class="addingToken">
+            <button id="addTokenButton">+</button>
+            <h2>Add Token</h2>
+            <p>Custom Import</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
