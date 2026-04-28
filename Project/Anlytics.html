@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analytics</title>
+    <link rel="stylesheet" href="Homepage.css" />
+    <link rel="stylesheet" href="Swap.css" />
+    <link rel="stylesheet" href="Analytics.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="left">
+      <div class="title">Snake Energy</div>
+      <div class="profile">
+        <p id="userProfile">
+          <i class="fa-solid fa-address-book"></i>
+          <label>User Profile</label>
+        </p>
+        <p id="phoneNumber">0913108937</p>
+      </div>
+      <div class="menu">
+        <div class="menuItem"><i class="fa-solid fa-th"></i> Dashboard</div>
+        <div class="menuItem"><i class="fa-solid fa-wallet"></i> Assets</div>
+        <div class="menuItem">
+          <i class="fa-solid fa-arrow-right-arrow-left"></i> Swap
+        </div>
+        <div class="menuItem">
+          <i class="fa-solid fa-chart-line"></i> Analytics
+        </div>
+        <div class="menuItem"><i class="fa-solid fa-gem"></i> NFTs</div>
+        <div class="menuItem">
+          <i class="fa-solid fa-clock-rotate-left"></i> Transactions
+        </div>
+        <div class="menuItem"><i class="fa-solid fa-shield"></i> Security</div>
+        <div class="menuItem"><i class="fa-solid fa-gear"></i> Settings</div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="rightHeader">
+        <div class="rightHeaderLeft">
+          <input
+            id="searchBar"
+            type="text"
+            placeholder="Search Assets, NFTs..."
+          />
+        </div>
+        <div class="rightHeaderRight">
+          <div class="headerRightButton">
+            <button id="receive">Receive</button>
+            <button id="send">Send</button>
+          </div>
+          <div class="bell">
+            <i class="fa-solid fa-bell"></i>
+          </div>
+          <div class="wallet">
+            <i class="fa-solid fa-wallet"></i>
+          </div>
+        </div>
+      </div>
+      <div class="portfolioPanel">
+        <div class="portfolioTitle">
+          <div class="portfolioTitleName">
+            <h1>PORTFOLIO PULSE</h1>
+            <p>REAL-TIME PERFORMANCE ANALYTICS & ASSET HEALTH</p>
+          </div>
+          <div class="timeFrame">
+            <p>1D</p>
+            <p>1W</p>
+            <p>1M</p>
+            <p>1Y</p>
+            <p>ALL</p>
+          </div>
+        </div>
+        <div class="topGrid">
+          <div class="balanceCard">
+            <div class="balanceCardTitle">
+              <p>CURRENT BALANCE</p>
+              <h2 id="totalBalance1">$142,850.62</h2>
+              <p id="balanceChange">-$12,402.10 (8.54%)</p>
+            </div>
+            <div class="describeDot">
+              <div class="dot wallet"></div>
+              <p>WALLET PERFORMANCE</p>
+              <div class="dot market"></div>
+              <p>MARKET AVG</p>
+            </div>
+            <div class="chartMock"></div>
+          </div>
+
+          <div class="allocationCard">
+            <p>ASSET ALLOCATION</p>
+
+            <div class="circle"></div>
+
+            <div class="assetList">
+              <div class="assetRow">
+                <div class="assetLeft">
+                  <div class="bar eth"></div>
+                  <div>
+                    <p class="assetName">Ethereum</p>
+                    <p class="assetSub">ETH / LAYER 1</p>
+                  </div>
+                </div>
+
+                <div class="assetRight">
+                  <p id="ethPercent">54.2%</p>
+                  <p id="ethValue">$77,425</p>
+                </div>
+              </div>
+
+              <div class="assetRow">
+                <div class="assetLeft">
+                  <div class="bar btc"></div>
+                  <div>
+                    <p class="assetName">Bitcoin</p>
+                    <p class="assetSub">WBTC / LAYER 1</p>
+                  </div>
+                </div>
+
+                <div class="assetRight">
+                  <p id="btcPercent">31.8%</p>
+                  <p id="btcValue">$45,426</p>
+                </div>
+              </div>
+
+              <div class="assetRow">
+                <div class="assetLeft">
+                  <div class="bar sol"></div>
+                  <div>
+                    <p class="assetName">Solana</p>
+                    <p class="assetSub">SOL / LAYER 1</p>
+                  </div>
+                </div>
+
+                <div class="assetRight">
+                  <p id="solPercent">12.4%</p>
+                  <p id="solValue">$17,713</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TABLE -->
+        <div class="tableCard">
+          <div class="tableTitle">
+            <p>ASSET PROFIT/LOSS BREAKDOWN</p>
+            <div class="tableFunction">
+              <i class="fa-solid fa-arrow-down-short-wide"></i>
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+
+          <div class="tableHeader">
+            <p>Asset</p>
+            <p>Avg Entry</p>
+            <p>Current</p>
+            <p>Qty</p>
+            <p>Realized</p>
+            <p>Unrealized</p>
+          </div>
+
+          <div class="row">
+            <div class="logo">
+              <img src="eth.jpg" />
+              <div id="assetInfo">
+                <p>Ethererum</p>
+                <p>ETH</p>
+              </div>
+            </div>
+
+            <p id="ethEntry">$1,842</p>
+            <p id="ethCurrentPrice">$3,240</p>
+            <p id="ethQuant">23.5</p>
+            <p class="profit" id="ethRealized">+$2,400</p>
+            <p class="loss" id="ethUnrealized">-$33,425</p>
+          </div>
+
+          <div class="row">
+            <div class="logo">
+              <img src="btc.jpg" />
+              <div id="assetInfo">
+                <p>Bitcoin</p>
+                <p>BTC</p>
+              </div>
+            </div>
+            <p id="btcEntry">$42,100</p>
+            <p id="btcCurrentPrice">$64,800</p>
+            <p id="btcQuant">0.7</p>
+            <p class="profit" id="btcRealized">+$1,120</p>
+            <p class="loss" id="btcUnrealized">-$15,891</p>
+          </div>
+
+          <div class="row">
+            <div class="logo">
+              <img src="sol.jpg" />
+              <div id="assetInfo">
+                <p>Solana</p>
+                <p>SOL</p>
+              </div>
+            </div>
+            <p id="solEntry">$42,100</p>
+            <p id="solCurrentPrice">$64,800</p>
+            <p id="solQuant">0.7</p>
+            <p class="profit" id="solRealized">+$1,120</p>
+            <p class="loss" id="solUnrealized">-$15,891</p>
+          </div>
+        </div>
+
+        <!-- BOTTOM -->
+        <div class="bottomGrid">
+          <div class="miniCard">
+            <i class="fa-solid fa-octagon cardIcon"></i>
+            <p>ACTIVE STAKES</p>
+            <h3 id="activeStakes">$24,102.00</h3>
+            <p class="subText" style="color: aqua;">APY AVG: 6.4%</p>
+            <div class="progressBar">
+              <div class="progressFill"></div>
+            </div>
+          </div>
+
+          <div class="miniCard">
+            <i class="fa-solid fa-leaf cardIcon"></i>
+            <p>YIELD HARVESTED</p>
+            <h3 id="yield">$1,244.50</h3>
+            <p class="subText" style="color: rgb(174, 43, 226);">LIFE-TIME ENERGY</p>
+            <div class="barChart">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+
+          <div class="miniCard">
+            <i class="fa-solid fa-droplet cardIcon"></i>
+            <p>LIQUIDITY SCORE</p>
+            <h3 id="liquidity">94/100</h3>
+            <p class="subText" style="color: rgb(206, 3, 3);">OPTIMAL PORTFOLIO HEALTH</p>
+            <p class="note">
+              Your ratio of liquid assets to locked stakes is balanced. Consider
+              hedging 10% more in USDC for market volatility.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

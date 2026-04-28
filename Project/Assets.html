@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assets</title>
+    <link rel="stylesheet" href="Homepage.css" />
+    <link rel="stylesheet" href="Receive.css" />
+    <link rel="stylesheet" href="Send.css" />
+    <link rel="stylesheet" href="Asset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+</head>
+<body>
+     <div class="left">
+      <div class="title">Snake Energy</div>
+      <div class="profile">
+        <p id="userProfile">
+          <i class="fa-solid fa-address-book"></i>
+          <label>User Profile</label>
+        </p>
+        <p id="phoneNumber">0913108937</p>
+      </div>
+      <div class="menu">
+        <div class="menuItem">
+          <i class="fa-solid fa-th"></i>  Dashboard</div>
+        <div class="menuItem">
+          <i class="fa-solid fa-wallet"></i> Assets</div>
+        <div class="menuItem">
+          <i class="fa-solid fa-arrow-right-arrow-left"></i> Swap</div>
+        <div class="menuItem">
+          <i class="fa-solid fa-chart-line"></i> Analytics</div>
+        <div class="menuItem">
+          <i class="fa-solid fa-gem"></i> NFTs</div>
+        <div class="menuItem">
+          <i class="fa-solid fa-clock-rotate-left"></i> Transactions</div>
+        <div class="menuItem">
+          <i class="fa-solid fa-shield"></i> Security</div>
+        <div class="menuItem">
+          <i class="fa-solid fa-gear"></i> Settings</div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="rightHeader">
+        <div class="rightHeaderLeft">
+          <input
+            id="searchBar"
+            type="text"
+            placeholder="Search Assets, NFTs..."
+          />
+        </div>
+        <div class="rightHeaderRight">
+          <div class="headerRightButton">
+            <button id="receive">Receive</button>
+            <button id="send">Send</button>
+          </div>
+          <div class="bell">
+            <i class="fa-solid fa-bell"></i>
+          </div>
+          <div class="wallet">
+            <i class="fa-solid fa-wallet"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="rightPanel">
+        <div class="portfolioOverview">
+            <p>PORTFOLIO OVERVIEW</p>
+            <p id="portfolioOverview">$142,850.42</p>
+            <div class="trend">
+                <div class="increase">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    <p id="increaseAmount">+12,4</p>
+                    <p>(24H)</p>
+                </div>
+                <div class="reward">
+                    <i class="fa-solid fa-leaf"></i>
+                    <p id="rewardAmount">842</p>
+                    <p id="typeCurrency">SNK</p>
+                    <p>Rewards</p>
+                </div>
+            </div>
+        </div>
+        <div class="filterSort">
+            <div class="filter">
+                <i class="fa-solid fa-filter-circle-dollar"></i>
+                Filter
+            </div>
+            <div class="sort">
+                <i class="fa-solid fa-sort"></i>
+                Sort
+            </div>
+        </div>
+        <div class="assetTable">
+            <div class="assetColumn">
+                <p>ASSET</p>
+                <p>PRICE</p>
+                <p>BALANCE</p>
+                <p>VALUE</p>
+                <p>24H CHANGE</p>
+            </div>
+            <div class="assetContainer">
+                <div class="assetBox">
+                    <div class="assetname">
+                         <i class="fa-brands fa-ethereum"></i>
+                         <div class="name">
+                         <p id="assetName">Ethereum</p>
+                         <p id="short">ETH</p>
+                         </div>
+                    </div>
+                    <div class="values">
+                        <div class="price">
+                            <p id="assetPrice">$2,451.20</p>
+                        </div>
+                        <div class="balanceAmount">
+                            <p>
+                            <p id="assetBalance">12.50
+                                <p id="currency">ETH</p>
+                            <p id="type">LIQUID</p>
+                            </p>
+                        </div>
+                        <div class="value">
+                            <p id="assetValue">$30,640</p>
+                        </div>
+                        <div class="24hChange">
+                            <p id="24hChangeValue">+4.25%</p>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="assetBox">
+                    <div class="assetname">
+                         <i class="fa-solid fa-bitcoin-sign"></i>
+                         <div class="name">
+                         <p id="assetName">Bitcoin</p>
+                         <p id="short">BTC</p>
+                         </div>
+                    </div>
+                    <div class="values">
+                        <div class="price">
+                            <p id="assetPrice">$2,451.20</p>
+                        </div>
+                        <div class="balanceAmount">
+                            <p>
+                            <p id="assetBalance">12.50</p>
+                            <p id="currency">BTC</p>
+                            <p id="type">LIQUID</p>
+                            </p>
+                        </div>
+                        <div class="value">
+                            <p id="assetValue">$30,640</p>
+                        </div>
+                        <div class="24hChange">
+                            <p id="24hChangeValue">+4.25%</p>
+                        </div>
+                    </div>
+                   
+                </div><div class="assetBox">
+                    <div class="assetname">
+                        
+                            <i class="fa-brands fa-hive"></i>
+                            <div class="name">
+                                <p id="assetName">Solana</p>
+                        
+                         <p id="short">SOL</p>
+                            </div>
+                         
+                    </div>
+                    <div class="values">
+                        <div class="price">
+                            <p id="assetPrice">$2,451.20</p>
+                        </div>
+                        <div class="balanceAmount">
+                            <p>
+                            <p id="assetBalance">12.50</p>
+                            <p id="currency">SOL</p>
+                            <p id="type">LIQUID</p>
+                            </p>
+                        </div>
+                        <div class="value">
+                            <p id="assetValue">$30,640</p>
+                        </div>
+                        <div class="24hChange">
+                            <p id="24hChangeValue">+4.25%</p>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="distributionAndOptimize">
+            <div class="assetDistribution">
+                <div class="assetDistributionTitle">
+                    <h2>Asset Distribution</h2>
+                    <p>Portfolio sprea across major protocols</p>
+                </div>
+                <div class="assetDistributionDashboard">
+                    <div class="pieChart"></div>
+                     <div class="dots">
+    <div class="dotRow">
+        <span class="dot eth"></span>
+        <div>
+            <p class="largest">Ethereum</p>
+        <p class="percent">64%</p>
+        </div>
+        
+    </div>
+
+    <div class="dotRow">
+        <span class="dot btc"></span>
+        <div>
+             <p class="largest">Bitcoin</p>
+        <p class="percent">24%</p>
+        </div>
+        
+    </div>
+
+    <div class="dotRow">
+        <span class="dot stable"></span>
+        <div><p class="largest">Stablecoins</p>
+        <p class="percent">10%</p></div>
+        
+    </div>
+
+    <div class="dotRow">
+        <span class="dot other"></span>
+        <div>
+            <p class="name">Others</p>
+        <p class="percent">2%</p>
+        </div>
+        
+    </div>
+</div>
+                </div>
+                
+            </div>
+            <div class="optimize">
+                <i class="fa-solid fa-wand-sparkles"></i>
+                <h2>Optimize your spending flow</h2>
+                <div class="exploreVault">
+                    <p>Explore Vaults</p>
+                    <i class="fa-solid fa-right-long"></i>
+                </div>
+            </div>
+        </div>
+      </div>
+</body>
+</html>

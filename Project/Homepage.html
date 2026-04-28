@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
     <link rel="stylesheet" href="Homepage.css" />
+    <link rel="stylesheet" href="Analytics.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -14,21 +15,29 @@
     <div class="left">
       <div class="title">Snake Energy</div>
       <div class="profile">
-        <p id="userProfile">
-          <i class="fa-solid fa-address-book"></i>
+        <div><img id="userPhoto" src="user.png"></div>
+        <div id="userProfile">
           <label>User Profile</label>
-        </p>
-        <p id="phoneNumber">0913108937</p>
+           <p id="phoneNumber">0913108937</p>
+        </div>
       </div>
       <div class="menu">
-        <div class="menuItem">Dashboard</div>
-        <div class="menuItem">Assets</div>
-        <div class="menuItem">Swap</div>
-        <div class="menuItem">Analytics</div>
-        <div class="menuItem">NFTs</div>
-        <div class="menuItem">Transactions</div>
-        <div class="menuItem">Security</div>
-        <div class="menuItem">Settings</div>
+        <div id="menuDashboard" class="menuItem">
+          <i class="fa-solid fa-th"></i>  Dashboard</div>
+        <div id="menuAssets" class="menuItem">
+          <i class="fa-solid fa-wallet"></i> Assets</div>
+        <div id="menuSwap" class="menuItem">
+          <i class="fa-solid fa-arrow-right-arrow-left"></i> Swap</div>
+        <div id="menuAnalytics" class="menuItem">
+          <i class="fa-solid fa-chart-line"></i> Analytics</div>
+        <div id="menuNFT" class="menuItem">
+          <i class="fa-solid fa-gem"></i> NFTs</div>
+        <div id="menuTransactions" class="menuItem">
+          <i class="fa-solid fa-clock-rotate-left"></i> Transactions</div>
+        <div id="menuSecurity" class="menuItem">
+          <i class="fa-solid fa-shield"></i> Security</div>
+        <div id="menuSettings" class="menuItem">
+          <i class="fa-solid fa-gear"></i> Settings</div>
       </div>
     </div>
     <div class="right">
@@ -83,8 +92,15 @@
           <div class="assets">
             <div class="assetsBox">
               <div class="assetsName">
-                <h1>Ethereum</h1>
+                <div class="logo">
+                  <img src="eth.jpg" />
+                  <div class="assetInfo">
+                  <h1>Ethereum</h1>
                 <p>ETH</p>
+                </div>
+                </div>
+                
+                
               </div>
               <div class="currentPrice">
                 <h1>12.42 ETH</h1>
@@ -97,8 +113,14 @@
             </div>
             <div class="assetsBox">
               <div class="assetsName">
-                <h1>Snake Energy</h1>
+                <div class="logo">
+                  <img src="snake.jpg" />
+                  <div class="assetInfo">
+                  <h1>Snake Energy</h1>
                 <p>SNK</p>
+                </div>
+                </div>
+                
               </div>
               <div class="currentPrice">
                 <h1>1,400,000 SNK</h1>
@@ -111,8 +133,13 @@
             </div>
             <div class="assetsBox">
               <div class="assetsName">
-                <h1>Bitcoin</h1>
+                <div class="logo">
+                  <img src="btc.jpg" />
+                  <div class="assetInfo">
+                  <h1>Bitcoin</h1>
                 <p>BTC</p>
+                </div>
+                </div>
               </div>
               <div class="currentPrice">
                 <h1>2.14 BTC</h1>
@@ -125,46 +152,47 @@
             </div>
             <div class="assetsBox">
               <div class="assetsName">
-                <h1>Bitcoin</h1>
-                <p>BTC</p>
+                <div class="logo">
+                  <img src="eth.jpg" />
+                  <div class="assetInfo">
+                  <h1>Ethereum</h1>
+                <p>ETH</p>
+                </div>
+                </div>
+                
+                
               </div>
               <div class="currentPrice">
-                <h1>2.14 BTC</h1>
-                <p>$14,848.00</p>
+                <h1>12.42 ETH</h1>
+                <p>$33,124.90</p>
               </div>
               <div class="trending">
-                <h1>-1.2%</h1>
+                <h1>+2.4%</h1>
                 <p>24H</p>
               </div>
             </div>
             <div class="assetsBox">
               <div class="assetsName">
-                <h1>Bitcoin</h1>
-                <p>BTC</p>
+                <div class="logo">
+                  <img src="snake.jpg" />
+                  <div class="assetInfo">
+                  <h1>Snake Energy</h1>
+                <p>SNK</p>
+                </div>
+                </div>
+                
               </div>
               <div class="currentPrice">
-                <h1>2.14 BTC</h1>
-                <p>$14,848.00</p>
+                <h1>1,400,000 SNK</h1>
+                <p>$374,221.95</p>
               </div>
               <div class="trending">
-                <h1>-1.2%</h1>
+                <h1>+18.2%</h1>
                 <p>24H</p>
               </div>
             </div>
-            <div class="assetsBox">
-              <div class="assetsName">
-                <h1>Bitcoin</h1>
-                <p>BTC</p>
-              </div>
-              <div class="currentPrice">
-                <h1>2.14 BTC</h1>
-                <p>$14,848.00</p>
-              </div>
-              <div class="trending">
-                <h1>-1.2%</h1>
-                <p>24H</p>
-              </div>
-            </div>
+            
+           
 
           </div>
         </div>

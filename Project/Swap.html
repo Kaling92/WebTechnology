@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swap</title>
+    <title>Assets</title>
+    <link rel="stylesheet" href="Homepage.css" />
+    <link rel="stylesheet" href="Swap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="left">
+      <div class="title">Snake Energy</div>
+      <div class="profile">
+        <div><img id="userPhoto" src="user.png" /></div>
+        <div id="userProfile">
+          <label>User Profile</label>
+          <p id="phoneNumber">0913108937</p>
+        </div>
+      </div>
+      <div class="menu">
+        <div id="menuDashboard" class="menuItem">
+          <i class="fa-solid fa-th"></i> Dashboard
+        </div>
+        <div id="menuAssets" class="menuItem">
+          <i class="fa-solid fa-wallet"></i> Assets
+        </div>
+        <div id="menuSwap" class="menuItem">
+          <i class="fa-solid fa-arrow-right-arrow-left"></i> Swap
+        </div>
+        <div id="menuAnalytics" class="menuItem">
+          <i class="fa-solid fa-chart-line"></i> Analytics
+        </div>
+        <div id="menuNFT" class="menuItem">
+          <i class="fa-solid fa-gem"></i> NFTs
+        </div>
+        <div id="menuTransactions" class="menuItem">
+          <i class="fa-solid fa-clock-rotate-left"></i> Transactions
+        </div>
+        <div id="menuSecurity" class="menuItem">
+          <i class="fa-solid fa-shield"></i> Security
+        </div>
+        <div id="menuSettings" class="menuItem">
+          <i class="fa-solid fa-gear"></i> Settings
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="rightHeader">
+        <div class="rightHeaderLeft">
+          <input
+            id="searchBar"
+            type="text"
+            placeholder="Search Assets, NFTs..."
+          />
+        </div>
+        <div class="rightHeaderRight">
+          <div class="headerRightButton">
+            <button id="receive">Receive</button>
+            <button id="send">Send</button>
+          </div>
+          <div class="bell">
+            <i class="fa-solid fa-bell"></i>
+          </div>
+          <div class="wallet">
+            <i class="fa-solid fa-wallet"></i>
+          </div>
+        </div>
+      </div>
+      <div class="righPanel">
+        <div class="swapTitle">
+          <h1>Liquid Snake Swap</h1>
+          <p>
+            Exchange token instantly with zero slippage across the kinetic
+            nebula liquidity pools.
+          </p>
+        </div>
+        <div class="container">
+          <div class="transactionRoute">
+            <p>TRANSACTION ROUTE</p>
+            <i class="fa-solid fa-gear"></i>
+          </div>
+          <div class="from">
+            <div class="fromNameandAmount">
+              <p>SELL</p>
+              <p id="fromAmount">0.5</p>
+              <p id="usdEqual">~$1,245.50</p>
+            </div>
+            <div class="crypType">
+              <div>
+                <p>Balance:</p>
+                <p id="balanceAmount">1.428</p>
+                <p id="fromCurrency">ETH</p>
+              </div>
+              <div class="cryptoDropdown">
+                <img src="" />
+                <select id="fromCryptoList">
+                  <option>ETH</option>
+                  <option>BTC</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="switchIcon">
+            <i class="fa-solid fa-arrow-down-up-across-line"></i>
+          </div>
+
+          <div class="to">
+            <div class="toNamendAmount">
+              <p>BUY</p>
+              <p id="toAmount">1240.50</p>
+              <div id="fromEqualTo">
+                <p>1</p>
+                <p id="fromCurrency">ETH =</p>
+                <p id="fromEqual">2.490</p>
+                <p id="toCurrency">SNAKE</p>
+              </div>
+            </div>
+            <div class="crypType">
+              <div>
+                <p>Balance:</p>
+                <p id="balanceAmount">2,400</p>
+                <p id="currency">USDC</p>
+              </div>
+              <div class="cryptoDropdown">
+                <img src="" />
+                <select id="toCryptoList">
+                  <option>ETH</option>
+                  <option>ETH</option>
+                  <option>BTC</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="billing">
+            <div class="exchangeRate">
+              <p>Exchange Rate</p>
+              <p id="exchangeRate">1 ETH = 2,491.00 SNAKE</p>
+            </div>
+            <div class="Slippage Tolerance">
+              <p>Slippage Tolerance</p>
+              <p id="tolerance">0.5%</p>
+            </div>
+            <div class="networkFee">
+              <p>Network Fee</p>
+              <p id="networkFee">$4.12</p>
+            </div>
+          </div>
+          <button id="confirmSwap">
+            <i class="fa-solid fa-bolt"></i> Confirm swap
+          </button>
+        </div>
+      </div>
+      <div class="rightInfoCards">
+        <div class="infoCard" id="priceActionCard">
+          <i class="fa-solid fa-arrow-trend-up"></i>
+          <h2>Price Action</h2>
+          <p>ETH/SNAKE is up 12% in the last 24 hours.</p>
+        </div>
+        <div class="infoCard" id="liquidityCard">
+          <i class="fa-solid fa-droplet"></i>
+          <h2>Liquidity Score</h2>
+          <p>Excellent liquidity. Transaction impact: < 0.01%.</p>
+        </div>
+        <div class="infoCard" id="verifiedPoolCard">
+          <i class="fa-solid fa-shield"></i>
+          <h2>Verified Pool</h2>
+          <p>Audit complete by Snake Shield Labs (v2.4).</p>
+          <button class="auditBtn" id="auditBtn">VIEW AUDIT REPORT</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

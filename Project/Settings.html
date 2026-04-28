@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link rel="stylesheet" href="Homepage.css" />
+    <link rel="stylesheet" href="Settings.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="left">
+      <div class="title">Snake Energy</div>
+      <div class="profile">
+        <div><img id="userPhoto" src="user.png" /></div>
+        <div id="userProfile">
+          <label>User Profile</label>
+          <p id="phoneNumber">0913108937</p>
+        </div>
+      </div>
+      <div class="menu">
+        <div id="menuDashboard" class="menuItem">
+          <i class="fa-solid fa-th"></i> Dashboard
+        </div>
+        <div id="menuAssets" class="menuItem">
+          <i class="fa-solid fa-wallet"></i> Assets
+        </div>
+        <div id="menuSwap" class="menuItem">
+          <i class="fa-solid fa-arrow-right-arrow-left"></i> Swap
+        </div>
+        <div id="menuAnalytics" class="menuItem">
+          <i class="fa-solid fa-chart-line"></i> Analytics
+        </div>
+        <div id="menuNFT" class="menuItem">
+          <i class="fa-solid fa-gem"></i> NFTs
+        </div>
+        <div id="menuTransactions" class="menuItem">
+          <i class="fa-solid fa-clock-rotate-left"></i> Transactions
+        </div>
+        <div id="menuSecurity" class="menuItem">
+          <i class="fa-solid fa-shield"></i> Security
+        </div>
+        <div id="menuSettings" class="menuItem">
+          <i class="fa-solid fa-gear"></i> Settings
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="rightHeader">
+        <div class="rightHeaderLeft">
+          <input
+            id="searchBar"
+            type="text"
+            placeholder="Search Assets, NFTs..."
+          />
+        </div>
+        <div class="rightHeaderRight">
+          <div class="headerRightButton">
+            <button id="receive">Receive</button>
+            <button id="send">Send</button>
+          </div>
+          <div class="bell">
+            <i class="fa-solid fa-bell"></i>
+          </div>
+          <div class="wallet">
+            <i class="fa-solid fa-wallet"></i>
+          </div>
+        </div>
+      </div>
+      <div class="systemPage">
+        <div class="systemHeader">
+          <h1>SYSTEMS CORE</h1>
+          <p>
+            Manage your digital identity and reinforce your cryptographic vault
+            layers.
+          </p>
+        </div>
+
+        <div class="systemLayout">
+          <!-- LEFT COLUMN -->
+          <div class="leftCol">
+            <!-- PROFILE -->
+            <div class="profileBox">
+              <div class="avatarWrap">
+                <img src="user.png" id="avatar" />
+                <i class="fa-solid fa-pen editIcon"></i>
+              </div>
+
+              <p id="username">CyberSerpent_01</p>
+              <p id="role">MASTER KEY HOLDER</p>
+
+              <div class="inputBox">
+                <p>PUBLIC IDENTITY</p>
+                <input value="snake.eth" />
+              </div>
+
+              <div class="inputBox">
+                <p>DISPLAY CURRENCY</p>
+                <select>
+                  <option>USD ($)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- INTERFACE -->
+            <div class="interfaceBox">
+              <p>Interface Mode</p>
+
+              <div class="modeToggle">
+                <i class="fa-solid fa-sun"></i>
+                <div class="switch on"></div>
+                <i class="fa-solid fa-moon"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN -->
+          <div class="rightCol">
+            <!-- TOP CARDS -->
+            <div class="topCards">
+              <!-- AUTH -->
+              <div class="cardBox">
+                <div class="cardIcon blue"></div>
+
+                <p class="cardTitle">Dual-Layer Auth</p>
+                <p class="cardDesc">
+                  Secure your transfers with dynamic biometric or authenticator
+                  codes.
+                </p>
+
+                <div class="cardBottom">
+                  <p class="activeText">ACTIVE PROTECTION</p>
+                  <div class="switch on"></div>
+                </div>
+              </div>
+
+              <!-- RECOVERY -->
+              <div class="cardBox pinkBorder">
+                <div class="cardIcon pink"></div>
+
+                <p class="cardTitle">Recovery Seed</p>
+                <p class="cardDesc">
+                  Your 24-word master key is the only way to recover your
+                  assets.
+                </p>
+
+                <button class="outlineBtn">BACKUP REVEAL</button>
+              </div>
+            </div>
+
+            <!-- PASSWORD -->
+            <div class="passwordBox">
+              <div class="passTop">
+                <p>Local Password</p>
+                <button class="small rotateBtn">ROTATE SECRET KEY</button>
+              </div>
+
+              <p class="sub">Last changed 42 days ago</p>
+
+              <div class="strengthBar">
+                <div class="fill"></div>
+              </div>
+
+              <div class="strengthRow">
+                <p>SECURITY STRENGTH</p>
+                <p class="good">OPTIMAL</p>
+              </div>
+            </div>
+
+            <!-- DEVICES -->
+            <div class="deviceBox">
+              <p id="first">Connected Nodes</p>
+
+              <div class="device">
+                <p>MacBook Pro 16"</p>
+                <button class="current">Current</button>
+              </div>
+
+              <div class="device">
+                <p>iPhone 15 Pro</p>
+                <button class="revoke">REVOKE</button>
+              </div>
+
+              <div class="device">
+                <p>iPad Air</p>
+                <button class="revoke">REVOKE</button>
+              </div>
+
+              <p class="logout">LOGOUT OF ALL OTHER SESSIONS</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FULL WIDTH -->
+        <div class="dangerBox">
+          <div>
+            <p class="dangerTitle">Destruction Protocol</p>
+            <p class="dangerDesc">
+              Permanently wipe all local wallet data and keys. This action is
+              cryptographic and cannot be reversed.
+            </p>
+          </div>
+
+          <button class="wipeBtn">Wipe Vault</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
